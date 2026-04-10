@@ -14,37 +14,29 @@ export default function RecipeList() {
         </h2>
         <div className="w-20 h-1 bg-green-400 rounded-full mx-auto mt-4 mb-12" />
 
-        {/* Two-column list */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1">
+        {/* Two-column bullet list */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-0">
           {/* Column 1 */}
-          <ul className="space-y-2">
+          <ul className="space-y-1">
             {recipeList.col1.map((item, i) => (
               <li
                 key={i}
-                className="flex items-start gap-3 bg-white rounded-xl px-4 py-3 shadow-sm border border-green-100"
+                className="flex items-start gap-2 py-1.5 border-b border-green-100/60 last:border-b-0"
               >
-                <span className="flex-shrink-0 w-5 h-5 mt-0.5 bg-green-100 rounded-full flex items-center justify-center">
-                  <svg className="w-3 h-3 text-green-600" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 6l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </span>
-                <span className="text-[#2d4a3e] text-sm md:text-base">{item}</span>
+                <span className="flex-shrink-0 mt-1.5 w-2 h-2 rounded-full bg-[#22c55e]" />
+                <span className="text-[#2d4a3e] text-sm leading-snug">{item}</span>
               </li>
             ))}
           </ul>
           {/* Column 2 */}
-          <ul className="space-y-2">
+          <ul className="space-y-1">
             {recipeList.col2.map((item, i) => (
               <li
                 key={i}
-                className="flex items-start gap-3 bg-white rounded-xl px-4 py-3 shadow-sm border border-green-100"
+                className="flex items-start gap-2 py-1.5 border-b border-green-100/60 last:border-b-0"
               >
-                <span className="flex-shrink-0 w-5 h-5 mt-0.5 bg-green-100 rounded-full flex items-center justify-center">
-                  <svg className="w-3 h-3 text-green-600" viewBox="0 0 12 12" fill="none">
-                    <path d="M2 6l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </span>
-                <span className="text-[#2d4a3e] text-sm md:text-base">{item}</span>
+                <span className="flex-shrink-0 mt-1.5 w-2 h-2 rounded-full bg-[#22c55e]" />
+                <span className="text-[#2d4a3e] text-sm leading-snug">{item}</span>
               </li>
             ))}
           </ul>

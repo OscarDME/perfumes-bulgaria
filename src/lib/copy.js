@@ -256,7 +256,6 @@ export const copy = {
   },
 
   footer: {
-    brand: "PerfuMaria das Ervas",
     tagline: "Открийте как да създавате перфектната натурална козметика!",
     linkLabel: "Пълен курс по натурална козметика",
     linkHref: "https://www.perfumariadaservas.shop",
