@@ -1,7 +1,7 @@
 import { copy } from "@/lib/copy";
 
 export default function AutonomyIntro() {
-  const { autonomyIntro, checkoutUrl } = copy;
+  const { autonomyIntro } = copy;
 
   return (
     <section className="w-full bg-white py-16 md:py-24 px-4">
@@ -31,9 +31,7 @@ export default function AutonomyIntro() {
             {autonomyIntro.text3}
           </p>
           <a
-            href={checkoutUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#final-cta-section"
             className="inline-block bg-[#22c55e] hover:bg-[#16a34a] text-white font-extrabold text-lg py-4 px-10 rounded-2xl shadow-[0_8px_32px_rgba(34,197,94,0.35)] border-b-4 border-[#15803d] transition-all hover:scale-105 active:scale-100"
           >
             {autonomyIntro.cta}
