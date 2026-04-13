@@ -3,7 +3,7 @@ export const copy = {
   checkoutUrl: "https://www.oriopay.app/p/kozmetika-naturalna",
 
   metadata: {
-    title: "Ръководство за натурална козметика | PerfuMaria das Ervas",
+    title: "Ръководство за натурална козметика",
     description:
       "80 рецепти за 100% натурална козметика, които да приготвите у дома. Тествани и доказани формули за лична употреба или за стартиране на бизнес.",
   },
@@ -257,7 +257,6 @@ export const copy = {
 
   footer: {
     tagline: "Открийте как да създавате перфектната натурална козметика!",
-    linkLabel: "Пълен курс по натурална козметика",
-    linkHref: "https://www.perfumariadaservas.shop",
+
   },
 };
