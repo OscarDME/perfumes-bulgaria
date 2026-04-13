@@ -1,4 +1,5 @@
 import { copy } from "@/lib/copy";
+import ScrollToCtaButton from "@/components/ScrollToCtaButton";
 
 export default function RecipeList() {
   const { recipeList } = copy;
@@ -44,12 +45,11 @@ export default function RecipeList() {
 
         {/* CTA */}
         <div className="mt-14 text-center">
-          <a
-            href="#final-cta-section"
+          <ScrollToCtaButton
             className="inline-block bg-[#22c55e] hover:bg-[#16a34a] text-white font-extrabold text-lg md:text-xl py-5 px-12 rounded-2xl shadow-[0_8px_32px_rgba(34,197,94,0.35)] border-b-4 border-[#15803d] transition-all hover:scale-105 active:scale-100"
           >
             {recipeList.cta}
-          </a>
+          </ScrollToCtaButton>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { copy } from "@/lib/copy";
+import ScrollToCtaButton from "@/components/ScrollToCtaButton";
 
 export default function Economy() {
   const { economy } = copy;
@@ -18,12 +19,11 @@ export default function Economy() {
           <p className="text-[#3d5a4a] text-base md:text-lg leading-relaxed mb-8">
             {economy.text2}
           </p>
-          <a
-            href="#final-cta-section"
+          <ScrollToCtaButton
             className="inline-block bg-[#22c55e] hover:bg-[#16a34a] text-white font-extrabold text-lg py-4 px-10 rounded-2xl shadow-[0_8px_32px_rgba(34,197,94,0.35)] border-b-4 border-[#15803d] transition-all hover:scale-105 active:scale-100"
           >
             {economy.cta}
-          </a>
+          </ScrollToCtaButton>
         </div>
 
         {/* Image */}
